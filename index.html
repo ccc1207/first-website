@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="../Stylesheets/index.css"> <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  
+  <!-- Import jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div>
+    <header>
+      <!-- Create the header section -->
+      <img src="../Images/logo3.jpg" alt="logo">
+    </header>
+  </div>
+
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="collections.html">COLLECTIONS</a></li>
+      <li><a href="bespoke.html">BESPOKE</a></li>
+      <li><a href="stones.html">STONES</a>
+        <ul class="dropdown">
+          <li><a href="amethysts.html">Amethysts</a></li>
+          <li><a href="aquamarines.html">Aquamarines</a></li>
+          <li><a href="diamonds.html">Diamonds</a></li>
+          <li><a href="emeralds.html">Emeralds</a></li>
+          <li><a href="garnets.html">Garnets</a></li>
+          <li><a href="rubies.html">Rubies</a></li>
+          <li><a href="sapphires.html">Sapphires</a></li>
+          <li><a href="tanzanites.html">Tanzanites</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="saveforlater.html">MY CATALOGUE</a></li>
+    </ul>
+  </nav>
+
+
+<div class="valentines-banner">
+  <span>💖 Valentine's Special! Enjoy exclusive offers today only! 💖</span>
+</div>
+
+
+  <!-- Image gallery -->
+  <div class="image-gallery">
+    <img src="../Images/image1.jpeg" alt="Image 1">
+    
+  </div>
+
+  <!-- Main content -->
+  <div class="container" data-aos="fade-up">
+    <h2>BESPOKE JEWELLERY DESIGN & FINE JEWELLERY </h2>
+    <p>Welcome to Carla’s Jewellery Design, where timeless elegance meets modern craftsmanship. Our passion for creating unique, high-quality jewellery drives everything we do...</p>
+  </div>
+
+  <!-- List -->
+  <h4>OUR EXPERTISE</h4>
+  <ul>
+    <li>Bespoke Jewellery Design</li>
+    <li>Redesigning of old jewellery</li>
+    <li>Diamond and Gemstone Sourcing</li>
+  </ul>
+
+  <!-- Blocks with testimonials -->
+  <div class="block">
+    <h3>WHAT OUR CLIENTS SAY</h3>
+    <p>"I can’t sing enough praises to Carla's Jewellery who created my engagement ring. The craftsmanship was impeccable, and customer service top-notch."</p>
+  </div>
+
+  
+  <div id="toggle-section" class="container">
+    <h2>Engagement Stories</h2>
+    <img class="image-manip" src="../Images/engagement1.jpeg" alt="engagement1">
+    <p>I asked her to marry me and she said yes</p>
+    <div class="actions">
+      <button class="like-button"><i class="fas fa-thumbs-up"></i></button>
+      <button class="dislike-button"><i class="fas fa-thumbs-down"></i></button>
+    </div>
+    <img class="image-manip" src="../Images/engagement2.avif" alt="engagement2">
+    <p>This ring sealed the deal</p>
+    <div class="actions">
+      <button class="like-button"><i class="fas fa-thumbs-up"></i></button>
+      <button class="dislike-button"><i class="fas fa-thumbs-down"></i></button>
+    </div>
+    <img class="image-manip" src="../Images/engagement3.jpeg" alt="engagement3">
+    <p>She loves her ring, she cant stop looking at it</p>
+    <div class="actions">
+      <button class="like-button"><i class="fas fa-thumbs-up"></i></button>
+      <button class="dislike-button"><i class="fas fa-thumbs-down"></i></button>
+    </div>
+    </div>
+ 
+    <div class="toggle-container">
+     <button id="toggle-button">Hide This Sections</button>
+   </div>
+
+  
+   <div class="comment-section">
+    <h2>Leave a Comment</h2>
+    <!-- Wrap in a form and give it an ID -->
+    <form id="commentForm" action="#" method="POST">
+      <textarea name="comment" placeholder="Write your comment here" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
+  <div class="newsletter-section">
+    <h2>Subscribe to the Newsletter</h2>
+    <!-- Wrap in a form and give it an ID -->
+    <form id="newsletterForm" action="#" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+  
+
+
+  <!-- Back to Top Button -->
+  <p style="text-align: right;"><a href="#top">Return To Top</a></p>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Carla’s Jewellery Design. Designed by CharmaineC.</p>
+    <p>Follow us on:
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </p>
+  </footer>
+  
+
+  <!-- External JavaScript file -->
+  <script src="../js_file/index.js"></script>
+
+</body>
+</html>

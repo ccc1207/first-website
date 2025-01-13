@@ -1,0 +1,554 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0 90px;
+  background-color: rgba(255, 250, 255, 0.993);
+}
+
+/* Style the header section */
+header img {
+  width: 380px; /* Adjust the width */
+  height: 160px; /* Adjust the height */
+  margin: 0 auto;
+  animation: slideIn 1s ease-in-out;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #34048b;
+  padding-bottom: 10px;
+  font-size: 60px;
+  background-color: transparent;
+}
+
+.valentines-banner {
+  position: relative;
+  overflow: hidden; /* Hide content outside the banner */
+  background-color: rgba(245, 151, 198, 0.9176470588); /* Valentine's Day pink color */
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 3px 0;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.valentines-banner span {
+  display: inline-block;
+  position: relative;
+  animation: scroll-left 10s linear infinite;
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End off-screen to the left */
+  }
+}
+/* Style the navigation menu */
+nav ul {
+  display: flex; /* Align navigation horizontally */
+  justify-content: center; /* Center-align the navigation menu */
+  list-style-type: none; /* Remove bullet points */
+  margin: 15px 0px;
+  padding: 0px;
+  gap: 120px;
+  font-size: 12px;
+  margin-bottom: 35px;
+}
+
+nav ul li {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: rgba(116, 16, 146, 0.8549019608); /* Change to accent color */
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0;
+  background: #4f1e6b;
+}
+
+nav ul li .dropdown {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 100%; /* Position below the parent */
+  left: 0;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 10px 0;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 9999; /* Ensure it's above other elements */
+}
+
+@keyframes dropdownItem {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.image-gallery {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 220px;
+  padding: 10px;
+}
+
+h2 {
+  color: #34048b;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.5px;
+}
+
+p {
+  color: #34048b;
+  font-size: 18px;
+  font-weight: normal;
+  margin: auto;
+  text-align: center;
+  width: 800px;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+h3 {
+  color: #34048b;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 200px;
+  margin-bottom: 50px;
+}
+
+h4, h5 {
+  color: #34048b;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0 auto;
+  padding: 0 90px;
+  margin-bottom: 20px;
+}
+
+ul {
+  color: #34048b;
+  font-weight: normal;
+  font-size: 18px;
+  list-style-type: none; /* Remove bullet points */
+  margin-bottom: 50px;
+  line-height: 2;
+}
+
+h1:last-of-type,
+h2:last-of-type {
+  color: #34048b;
+  text-align: center;
+}
+
+/* Link styling */
+a {
+  color: #34048b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.image-manip {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+/* Testimonials Styling */
+.block {
+  background-color: #f9f9f9; /* Light background for the block */
+  color: #34048b; /* Text color */
+  border: 2px solid #34048b; /* Add a border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the block */
+  margin: 30px auto; /* Space between blocks and center-align */
+  max-width: 800px; /* Limit the width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.block h3,
+.block h4 {
+  text-align: center; /* Center the headings */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #4f1e6b; /* Accent color */
+  font-size: 24px; /* Larger heading text */
+}
+
+.block p {
+  font-size: 16px; /* Standard readable size */
+  line-height: 1.8; /* Better readability */
+  margin-bottom: 10px;
+  text-align: center; /* Center-align the testimonial text */
+  font-style: italic; /* Italicized for testimonials */
+}
+
+/* General Styling for Newsletter and Comment Sections */
+.comment-section, .newsletter-section {
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Headers */
+.comment-section h2, .newsletter-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #34048b;
+  margin-bottom: 15px;
+}
+
+/* Textarea Styling */
+.comment-section textarea {
+  width: 96%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
+/* Input Styling for Newsletter */
+.newsletter-section input[type=email] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.comment-section button, .newsletter-section button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #34048b;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-section button:hover, .newsletter-section button:hover {
+  background-color: #34048b;
+}
+
+/* Add Hover Effect for Inputs */
+.comment-section textarea:focus, .newsletter-section input[type=email]:focus {
+  border-color: #34048b;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .comment-section, .newsletter-section {
+    width: 95%;
+    padding: 15px;
+  }
+  .comment-section textarea, .newsletter-section input[type=email] {
+    font-size: 0.9rem;
+  }
+  .comment-section button, .newsletter-section button {
+    font-size: 1rem;
+  }
+}
+table {
+  color: #34048b;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+thead, tbody {
+  color: #34048b;
+  font-weight: normal;
+}
+
+thead {
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+
+tbody {
+  font-size: 15px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px 30px;
+  border: 2px solid #34048b;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #34048b;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #34048b;
+}
+
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {
+  color: #bbb;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #34048b;
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 4, 139, 0.5);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  background-color: #34048b;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #4f1e6b;
+  transform: translateY(-2px);
+}
+
+.contact-form button:active {
+  transform: translateY(0);
+}
+
+button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  border: 2px solid #291180;
+  background-color: #291180;
+  color: #f1eff7;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.email-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #34048b; /* Matches the overall theme color */
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #4f1e6b; /* Slightly darker shade for hover effect */
+}
+
+#toggle-section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease; /* Smoothly animate visibility changes */
+}
+
+/* Section Header */
+#toggle-section h2 {
+  font-size: 1.5rem;
+  color: #34048b;
+  margin-bottom: 20px;
+}
+
+/* Story Blocks */
+#toggle-section .image-manip {
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#toggle-section .image-manip:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Under Images */
+#toggle-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0 20px;
+  line-height: 1.5;
+}
+
+/* Action Buttons */
+#toggle-section .actions {
+  margin-bottom: 20px;
+}
+
+#toggle-section .actions button {
+  font-size: 0.9rem;
+  padding: 8px 15px;
+}
+
+.hidden {
+  display: none; /* Hide the section when toggled off */
+}
+
+.engagement-stories {
+  display: flex;
+  flex-wrap: wrap; /* Ensures the layout adapts to smaller screens */
+  gap: 20px; /* Space between items */
+  margin-top: 20px;
+}
+
+.story {
+  flex: 1 1 calc(33.33% - 20px); /* Three items per row, with spacing accounted for */
+  text-align: center; /* Center-align text and buttons */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: for visual clarity */
+  border: 1px solid #ddd; /* Optional: for structure */
+  padding: 10px;
+  border-radius: 8px; /* Optional: for a rounded look */
+  background-color: #f9f9f9; /* Optional: light background */
+}
+
+.image-manip {
+  width: 100%; /* Ensure images fit within their container */
+  height: auto;
+  max-width: 200px; /* Optional: Limit image size */
+  margin-bottom: 10px;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+button.like-button,
+button.dislike-button {
+  background-color: #ff69b4; /* Valentine's Day pink */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button.like-button:hover,
+button.dislike-button:hover {
+  background-color: #ff4081; /* Darker pink on hover */
+}
+
+/* Saved Items Section */
+#saved-items-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.saved-image {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-btn:hover {
+  background-color: #eb8181;
+}/*# sourceMappingURL=index.css.map */
