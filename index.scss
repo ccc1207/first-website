@@ -555,3 +555,79 @@ button.dislike-button:hover {
   .delete-btn:hover {
       background-color: #eb8181;
   }
+
+  /* General mobile styling for small screens */
+@media (max-width: 768px) {
+  body {
+    padding: 0 20px;
+    font-size: 14px;
+  }
+
+  header img {
+    width: 100%;
+    height: auto;
+  }
+
+  header {
+    font-size: 24px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .valentines-banner {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  h2, h3, h4, h5 {
+    font-size: 1.2rem;
+    padding: 0 15px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    width: auto;
+    padding: 0 10px;
+  }
+
+  .block {
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  .image-gallery {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .comment-section, .newsletter-section {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .engagement-stories {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .story {
+    flex: 1 1 100%;
+  }
+
+  .image-manip {
+    width: 80%;
+    max-width: 150px;
+  }
+}
